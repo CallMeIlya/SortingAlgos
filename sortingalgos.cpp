@@ -1,28 +1,53 @@
+#include <cstddef>
 #include <iostream>
+#include <vector>
 #include <array>
 #include <iterator>
 
 
 using namespace std;
 
-template<typename  Type>
-int getArrLen(Type arr[]) {
-  if(sizeof(arr) <= 0) {return 0;}
-  return sizeof(arr)/sizeof(Type);
+
+void quickSort(vector<int>& arr) {
+
 }
 
-template<typename Type>
-void outputArr(Type arr[]) {
-  int arrLen = getArrLen(arr);
-  for(int i = 0; i < arrLen; i++) {
-    cout << arr[i] << " ";
-  }
-  cout << endl;
+void mergeSort(vector<int>& arr) {
+
+}
+
+void bubbleSort(vector<int>& arr) {
+
+}
+
+void insertionSort(vector<int>& arr) {
+
+}
+
+void bucketSort(vector<int>& arr) {
+
+}
+
+void heapSort(vector<int>& arr) {
+
 }
 
 int main() {
-  int arr[] = {2,5,3,6,18,5,99};
-  outputArr(arr);
+  vector<int> arr = {2,5,3,6,18,5,99};
+
+  for(size_t i = 0; i < arr.size(); i++) {
+    cout << arr[i] << " ";
+  }
+  cout << endl;
+
   //do some sorting
-  outputArr(arr);
+
+
+
+
+
+  for(size_t i = 0; i < arr.size(); i++) {
+    cout << arr[i] << " ";
+  }
+  cout << endl;
 }
